@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CS6.302 SSD Monsoon 2025</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Quicksand"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha256-DF7Zhf293AJxJNTmh5zhoYYIMs2oXitRfBjY+9L//AY="
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+      body {
+        font-family: Quicksand, sans-serif;
+        background: #f9f9f9;
+        color: #333;
+      }
+      h1,
+      h3 {
+        margin-bottom: 0.5rem;
+      }
+      .navbar-nav a {
+        margin-right: 1rem;
+      }
+      .section-card {
+        margin-bottom: 1.5rem;
+      }
+      .table-responsive {
+        margin-top: 1rem;
+      }
+      .light-text-row {
+        color: #adadad;
+      }
+      .card-header {
+        background-color: #007bff;
+        color: white;
+      }
+      .card-header a {
+        color: white;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body onload="startTime()">
+    <!-- Sticky Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <a class="navbar-brand" href="#">CS6.302 SSD</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#lecture">Lecture/Lab Hours</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#cpolicy">Course Policy</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#schedule">Lectures</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#lab">Lab</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#activity">Exams</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#staff">Staff</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <div class="container text-center my-4">
+      <h1 id="home">CS6.302 - Software System Development</h1>
+      <h3>Software Engineering Research Center, IIIT Hyderabad</h3>
+      <h3>Monsoon 2025</h3>
+    </div>
+
+    <!-- About Section -->
+    <div class="container section-card">
+      <div class="card">
+        <div class="card-header" id="about">
+          <h4>About</h4>
+        </div>
+        <div class="card-body">
+          <p>
+            Software System Development is a graduate-level course that equips
+            students with a comprehensive understanding of the principles,
+            tools, and practices involved in designing and building modern
+            software systems...
+          </p>
+          <p>
+            Students will gain practical experience with industry-relevant tools
+            and technologies such as Bash scripting, SQL, NoSQL databases, HTML,
+            CSS, JavaScript, front-end frameworks, RESTful APIs, Python, and
+            Flask...
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lecture/Lab Hours -->
+    <div class="container section-card">
+      <div class="card">
+        <div class="card-header" id="lecture">
+          <h4>Lecture/Lab Hours</h4>
+        </div>
+        <div class="card-body">
+          <ul>
+            <li>
+              Lecture 🏛 : 8:30 AM to 9:55 AM - Tuesdays and Fridays - Lecture
+              Hall: H-205 - 29 Classes
+            </li>
+            <li>
+              Lab/Tutorial 💻 : 2:00 PM to 5:00 PM Friday - Lecture Hall: SH1 -
+              14 Sessions
+            </li>
+          </ul>
+          <p>
+            Instructor office hours: 15 mins before class. TA office hours
+            listed in <a href="#staff">Staff</a> section.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Course Policy -->
+    <div class="container section-card">
+      <div class="card">
+        <div class="card-header" id="cpolicy">
+          <h4>Course Policy</h4>
+        </div>
+        <div class="card-body">
+          <ul>
+            <li>
+              <b>Teaching Methodology:</b> Hands-on real-life problem solving.
+              Notes:
+              <a
+                href="https://tinted-rumba-8c6.notion.site/CS6-302-Software-System-Development-670da706e9514d7f9d5b1bcf3c6a1005"
+                target="_blank"
+                >here</a
+              >
+            </li>
+            <li>
+              <b>Academic Honesty:</b> Only help to learn, never to do for
+              someone else.
+            </li>
+            <li><b>Zero Tolerance on Plagiarism.</b></li>
+            <li><b>Absentee Policy.</b></li>
+            <li>
+              <b>Use of AI Tools:</b> Allowed but mention usage in submissions.
+            </li>
+            <li>
+              <b>Submission Deadlines:</b> Strict deadlines, no extensions.
+            </li>
+            <li>
+              <b>Grading Distribution:</b>
+              <div class="table-responsive">
+                <table class="table table-bordered text-center">
+                  <tr>
+                    <th>Deliverables</th>
+                    <th>Weightage</th>
+                  </tr>
+                  <tr>
+                    <td>Assignment (4)</td>
+                    <td>15%</td>
+                  </tr>
+                  <tr>
+                    <td>Lab Activities (14)</td>
+                    <td>15%</td>
+                  </tr>
+                  <tr>
+                    <td>Practice and Class Activity (5)</td>
+                    <td>10%</td>
+                  </tr>
+                  <tr>
+                    <td>QUIZ (2)</td>
+                    <td>10%</td>
+                  </tr>
+                  <tr>
+                    <td>MID (1) - Team Hackathon</td>
+                    <td>10%</td>
+                  </tr>
+                  <tr>
+                    <td>Final Exam (Team Project)</td>
+                    <td>40%</td>
+                  </tr>
+                </table>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lectures, Labs, Exams, Staff -->
+    <div class="container section-card">
+      <div class="card">
+        <div class="card-header" id="schedule">
+          <h4>Lecture Schedule & Content</h4>
+        </div>
+        <div class="card-body table-responsive">
+          <!-- Example Table -->
+          <table class="table table-bordered table-hover">
+            <thead class="thead-dark text-center">
+              <tr>
+                <th>S.No</th>
+                <th>Schedule</th>
+                <th>Lecture Content</th>
+                <th>Material</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="light-text-row">
+                <td>1</td>
+                <td>01-Aug-25 (Friday)</td>
+                <td>Course Intro - Software Systems</td>
+                <td>
+                  [<a
+                    href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/sai11101989/sai11101989.github.io/main/Course/SSD_Monsoon2025/SSD_Monsoon2025.pdf"
+                    target="_blank"
+                    >Slides</a
+                  >]
+                </td>
+              </tr>
+              <tr class="light-text-row">
+                <td>2</td>
+                <td>05-Aug-25 (Tuesday)</td>
+                <td>Relational Data</td>
+                <td>
+                  [<a
+                    href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/sai11101989/sai11101989.github.io/main/Course/SSD_Monsoon2025/data.pdf"
+                    target="_blank"
+                    >Slides</a
+                  >]
+                </td>
+              </tr>
+              <!-- Repeat all other lectures here -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add Lab, Exams, Staff sections similarly using cards and table-responsive -->
+
+    <!-- Footer -->
+    <footer class="text-center my-4">
+      <p>
+        Important Links:
+        <a
+          href="https://intranet.iiit.ac.in/offices/static/files/Almanac_M25_Final-Ver2.1.pdf"
+          target="_blank"
+          >Almanac</a
+        >
+        |
+        <a
+          href="https://courses.iiit.ac.in/course/view.php?id=5324"
+          target="_blank"
+          >Course Portal</a
+        >
+      </p>
+      <p id="txt"></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      function startTime() {
+        const today = new Date();
+        document.getElementById("txt").innerHTML = today.toLocaleString();
+        setTimeout(startTime, 1000);
+      }
+    </script>
+  </body>
+</html>
